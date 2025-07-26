@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <!-- Exercício 3 -->
+    <div class="form-container">
+        <h2>Formulário de Feedback</h2>
+        <form>
+            <div>
+                <input type="text" name="nome" placeholder="Nome">
+            </div>
+            
+            <div>
+                <input type="email" name="email" placeholder="E-mail">
+            </div>
+
+            <div>
+                <input type="text" name="endereco" placeholder="Endereço Completo">
+            </div>
+            
+            <div>
+                <label for="tipo">Tipo de Feedback</label>
+                <select name="tipo" id="">
+                    <option value="elogio">Elogio</option>
+                    <option value="critica">Crítica contrutiva</option>
+                    <option value="reclamacao">Reclamação</option>
+                </select>
+            </div>
+            
+            <div class="msg">
+                <label for="mensagem">Feedback: </label>
+                <textarea name="mensagem" id="mensagem" cols="40" rows="6" placeholder="Escreva o seu feedback"></textarea>
+            </div>
+
+            <button>Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

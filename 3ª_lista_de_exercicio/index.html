@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>3ª Lista de Exercícios</title>
+</head>
+<body>
+    <!-- Exercício 1 -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#conteudos">Conteúdos</a></li>
+                <li><a href="#missao">Missão</a></li>
+                <li><a href="#visao">Visão</a></li>
+            </ul>
+            <!-- Requisito do exercício 7 - Menu Hamburger -->
+            <div class="hamburger" onclick="trocarMenu()">&#9776;</div>
+        </nav>
+        <h1>Seja muito bem-vindo(a)!</h1>
+        <p id="importante">Aqui você vai encontrar alguns conteúdos desenvolvidos por mim, afim de exercitar conhecimentos e práticas.</p>
+        <section id="conteudos">
+            <h2>Veja os conteúdos</h2>
+            <div class="links">
+                <a href="lista/listas.html">listas</a>
+                <a href="feedback/feedback.html">formulário de feedback</a>
+                <a href="galeria/galeria.html">galeria</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="container-sec" id="missao">
+            <h2 class="destaque">Missão</h2>
+            <p>Desenvolver soluções inovadoras, eficientes e que gere satisfação.</p>
+        </section>
+        <section class="container-sec" id="visao">
+            <h2 class="destaque">Visão</h2>
+            <p>Ser reconhecida pelo desempenho, comprometimento e resultados de qualidade.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Maria Luiza. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <!-- Manipulando o menu hamburger através do JS -->
+    <script>
+        // Alterna o menu ("liga e desliga")
+        function trocarMenu() {
+        const navMobile = document.querySelector(".navbar ul");
+        navMobile.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

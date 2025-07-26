@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+/* Estilização da galeria */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex';   
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.container-item{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-item img{
+    width: 250px;
+}
+
+.legenda{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    height: 100px;
+    box-shadow: 1px 1px  rgba(0, 0, 0, 0.158);
+}
+
+.container-item p{
+    text-align: start;
+    padding-left: 5%;
+    font-size: 12px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Ajusta o tamanho das colunas de acordo com o tamanho das telas */
+
+@media (max-width: 1025px){
+    .container-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 769px){
+    .container-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width: 480px){
+    .container-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
